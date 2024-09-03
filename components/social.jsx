@@ -4,7 +4,7 @@ import {FaGithub , FaTwitter , FaInstagram} from "react-icons/fa";
 const  socials=[
     {
        icon:<FaGithub />,
-       path:"", 
+       path:"https://github.com/KalashThakare", 
     },
     {
         icon:<FaTwitter />,
@@ -12,7 +12,7 @@ const  socials=[
     },
     {
         icon:<FaInstagram />,
-        path:"", 
+        path:"https://www.instagram.com/_kalash_t_/", 
     },
 ];
 
