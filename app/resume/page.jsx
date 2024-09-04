@@ -63,6 +63,24 @@ const Skills={
   ]
 };
 
+const edu={
+  icon:"/assets/resume/cap.svg",
+  title:"My Education",
+  Description:"jwidnwiedn cwecncwiec iucnweic wedhwcnswiuwscs i usicwsieduc siuvnscj sdjnn vdbxm vjdfiueqwjdov ",
+  items:[
+    {
+      institution:"Online Course Platform",
+      degree:"Full Stack Web Development Bootcamp",
+      duration:"2024"
+    },
+    {
+      institution:"Online Course",
+      degree:"Programing Course",
+      duration:"2024"
+    },
+  ],
+};
+
 import {Tabs,TabsContent,TabsList,TabsTrigger} from "@/components/ui/tabs";
 import {Tooltip,TooltipContent,TooltipProvider,TooltipTrigger} from "@/components/ui/tooltip";
 import {ScrollArea} from "@/components/ui/scroll-area"
@@ -80,7 +98,10 @@ export const Resume = () => {
     >
       <div className="container mx-auto">
         <Tabs defaultValue="Skills" className="flex flex-col xl:flex-row gap-[60px]">
-          <TabsList>
+          <TabsList className="flex flex-col w-full max-w-[360px] mx-auto xl:mx-0 gap-6">
+            <TabsTrigger value="Education">
+              Education
+            </TabsTrigger>
             <TabsTrigger value="Skills">
               Skills
             </TabsTrigger>
@@ -92,9 +113,45 @@ export const Resume = () => {
           {/* content */}
 
           <div className="min-h-[70vh] w-full">
-            {/*skills*/}
+            {/*education*/}
+            <TabsContent value="Education" className="w-full">
+              <div className="flex flex-col gap-[30px] text-centre xl:text-left">
+                <h3 className="text-4xl font-bold">
+                  {edu.title}
+                </h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  {edu.Description}
+                </p>
+                <ScrollArea className="h-[400px]">
+                  <ul className="grid grid-cols-1 gap-[30px]">
+                    {edu.items.map((item,index)=>{
+                      return(
+                        <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col item-centre justify-centre lg:items-start gap-1">
+                          <span className="text-accent">
+                            {item.duration}
+                          </span>
+                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+                            {item.degree}
+                          </h3>
+                          <div className="flex item-centre gap-3">
+                            <span className="w-[60px] h-[6px] rounded-full bg-accent">.</span>
+                            <p className="text-white/60">
+                              {item.institution}
+                            </p>
+                          </div>
+                        </li>
+                      );
+                    })}
+                    
+                  </ul>
+                </ScrollArea>
+              </div>
+            </TabsContent>
             <TabsContent value="Skills" className="w-full">
               Skills
+            </TabsContent>
+            <TabsContent value="About me" className="w-full">
+              About
             </TabsContent>
           </div>
 
