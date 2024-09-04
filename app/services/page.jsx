@@ -29,7 +29,7 @@ export const Services = () => {
           animate={{
             opacity:1,
             transition:{
-              delay:1,
+              delay:0.5,
               duration:0.4,
               ease:"easeIn"
             },
