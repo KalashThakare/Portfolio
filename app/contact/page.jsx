@@ -1,12 +1,10 @@
 "use client";
 
 import {motion} from "framer-motion";
-import {Button} from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import {Textarea} from "@/components/ui/textarea";
-import {Select,SelectContent,SelectGroup,SelectItem,SelectLabel,SelectTrigger,SelectValue} from "@/components/ui/select";
 
 import {FaPhoneAlt,FaEnvelope,FaMapMarkerAlt} from "react-icons/fa";
+
+import ContactForm from "./contactform";
 
 
 const info=[
@@ -43,35 +41,7 @@ export const Contact = () => {
     >
         <div className="container mx-auto">
             <div className="flex flex-col xl:flex-row gap-[30px]">
-                <div className=" xl:w-[54%] order-2 xl:order-none justify-start">
-                    <form action="" className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
-                        <h3 className="text-4xl text-accent">Let's work together</h3>
-                        <p className="text-white/60 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus tempore est id odit maxime nulla?</p>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <Input type="firstname" placeholder="Firstname" />
-                            <Input type="lastname" placeholder="Lastname" />
-                            <Input type="email" placeholder="Email address" />
-                            <Input type="phone" placeholder="Phone number" />
-                        </div>
-                        <Select>
-                            <SelectTrigger className="w-full">
-                                <SelectValue placeholder="Select a service" />
-                            </SelectTrigger>
-                            <SelectContent>
-                                <SelectGroup>
-                                    <SelectLabel>Select service</SelectLabel>
-                                    <SelectItem value="est">Web Development</SelectItem>
-                                    <SelectItem value="cst">Video Editing</SelectItem>
-                                </SelectGroup>
-                            </SelectContent>
-                        </Select>
-                        <Textarea className="h-[200px]" placeholder="Type your message here.">                       
-                        </Textarea>
-                        <Button size="md" className="max-w-28 rounded-xl ">
-                            Send 
-                        </Button>
-                    </form>
-                </div>
+                <ContactForm />
 
 
 
