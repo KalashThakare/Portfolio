@@ -7,12 +7,12 @@ import {sendEmail} from "./sendEmail";
 import { useState } from "react";
 
 const initValues={
-    firstname:"sads",
-    lastname:"dasds",
-    email:"abc@gmail.com",
+    firstname:"",
+    lastname:"",
+    email:"",
     service:"",
-    number:"1234567890",
-    message: "kfsjf"
+    number:"",
+    message: ""
 };
 
 const initState={ values:initValues};
