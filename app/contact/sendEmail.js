@@ -1,7 +1,7 @@
 'use server';
 import nodemailer from 'nodemailer';
 
-export const sendEmail=async(email, message)=>{
+export const sendEmail=async(email, message,firstname)=>{
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         host: "smtp",
@@ -9,7 +9,7 @@ export const sendEmail=async(email, message)=>{
         secure: true,
         auth: {
           user: "kalashthakare898@gmail.com",
-          pass: "kalash@123",
+          pass: "//app password",
         },
       });
 
@@ -18,6 +18,7 @@ export const sendEmail=async(email, message)=>{
         to: "kalashthakare898@gmail.com",
         subject: "Contact form submission",
         text: message,
+        
       });
 
       console.log("Message sent: %s", info.messageId);

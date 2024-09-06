@@ -2,7 +2,7 @@
 
 export const Work = () => {
   return (
-    <div>work page</div>
+    <div></div>
   )
 }
 
