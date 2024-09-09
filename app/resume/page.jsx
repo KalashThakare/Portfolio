@@ -18,7 +18,7 @@ const about={
     },
     {
       fieldname:"Contact",
-      fieldValue:"(+91) --"
+      fieldValue:"(91)"
     },
     {
       fieldname:"Freelance",
@@ -75,7 +75,7 @@ const Skills={
 const edu={
   icon:"/assets/resume/cap.svg",
   title:"My Education",
-  Description:"Bachelor's in ECS | RCOEM | Graduate Year 27'",
+  Description:"Bachelors in ECS | RCOEM | Graduate Year 27'",
   items:[
     {
       institution:"Online Course Platform",

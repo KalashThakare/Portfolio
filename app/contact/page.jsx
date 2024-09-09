@@ -11,7 +11,7 @@ const info=[
     {
         icon:<FaPhoneAlt />,
         title:"Phone",
-        description:"(+91) &mdash",
+        description:"(91)",
     },
     {
         icon:<FaEnvelope />,
