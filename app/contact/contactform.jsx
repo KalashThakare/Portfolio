@@ -39,16 +39,8 @@ export const ContactForm = () => {
         }));
         console.log("State: ",state)
         // nodemailer logic
-        try {
-            await sendEmail(state.values.email, state.values.message,state.values.firstname);
-        } catch (error) {
-            setState((prev)=>({
-                ...prev,
-                error: error.message,
-            }))
-            
-        }
-        
+
+        await sendEmail(state.values.email, state.values.message, state.values.firstname);
 
     };
 

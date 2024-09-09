@@ -6,7 +6,7 @@ import {SiTailwindcss,SiNextdotjs,SiPostgresql,SiExpress} from "react-icons/si";
 
 const about={
   title:"About me",
-  Description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, id.",
+  Description:"",
   info:[
     {
       fieldname:"Name",
@@ -75,7 +75,7 @@ const Skills={
 const edu={
   icon:"/assets/resume/cap.svg",
   title:"My Education",
-  Description:"jwidnwiedn cwecncwiec iucnweic wedhwcnswiuwscs i usicwsieduc siuvnscj sdjnn vdbxm vjdfiueqwjdov ",
+  Description:"Bachelor's in ECS | RCOEM | Graduate Year 27'",
   items:[
     {
       institution:"Online Course Platform",
@@ -128,7 +128,7 @@ export const Resume = () => {
                 <h3 className="text-4xl font-bold text-center xl:text-left">
                   {edu.title}
                 </h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <p className="max-w-[600px] text-white/80 mx-auto xl:mx-0">
                   {edu.Description}
                 </p>
                 <ScrollArea className="h-[400px]">

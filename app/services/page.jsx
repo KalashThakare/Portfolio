@@ -15,7 +15,7 @@ const services=[
     num:'02',
     title:'Video Editing',
     description:"I specialize in transforming raw footage into polished, compelling videos, provide professional video editing that enhances your content, making it engaging. I craft videos that tell your story and captivate your audience.",
-    href:""
+    href:"https://www.instagram.com/reel/C-Fg7t0vHbR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
 ];
 
