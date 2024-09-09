@@ -8,13 +8,13 @@ const services=[
   {
     num:'01',
     title:'Web Development',
-    description:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, quo.',
+    description:"I create custom websites that are visually appealing, responsive, and user-friendly. Whether it's a portfolio, business site, or e-commerce platform, I deliver solutions that look great and perform flawlessly on any device.",
     href:""
   },
   {
     num:'02',
     title:'Video Editing',
-    description:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, quo.',
+    description:"I specialize in transforming raw footage into polished, compelling videos, provide professional video editing that enhances your content, making it engaging. I craft videos that tell your story and captivate your audience.",
     href:""
   },
 ];

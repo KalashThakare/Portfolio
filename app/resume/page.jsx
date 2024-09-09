@@ -30,7 +30,7 @@ const about={
 
 const Skills={
   title:"My Skills",
-  Description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quis?",
+  
   skillslist:[
     {
       icon:<FaHtml5 />,

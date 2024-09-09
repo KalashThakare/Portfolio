@@ -14,7 +14,8 @@ export const Home = () => {
               Hello I'm <br /><span className="text-accent">Kalash Thakare</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, vel! Labore illo molestias, libero obcaecati quasi mollitia voluptatum dolor placeat natus repudiandae aut, laborum error alias autem quam voluptate possimus.
+            A web developer and video editor with a creative edge.
+            I specialize in building dynamic websites and editing compelling videos that tell a story. My work is a fusion of technical expertise and artistic vision, aimed at delivering polished, user-friendly experiences. Dive into my portfolio to discover how I turn concepts into digital realities.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
