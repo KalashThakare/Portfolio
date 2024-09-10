@@ -8,7 +8,7 @@ const  socials=[
     },
     {
         icon:<FaTwitter />,
-        path:"", 
+        path:"https://x.com/ThakareKalash", 
     },
     {
         icon:<FaInstagram />,
