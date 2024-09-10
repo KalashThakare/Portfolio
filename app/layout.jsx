@@ -2,6 +2,7 @@ import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
 
+
 //components
 
 import Header from '@/components/header';
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
 
           {children}
         </PageTransition>
+        
         
         </body>
     </html>

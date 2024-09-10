@@ -22,7 +22,7 @@ const services=[
 
 export const Services = () => {
   return (
-    <section className="min-h-[80vh] flex flex-col justify-centre py-12 xl:py-0">
+    <section className="min-h-[80vh] flex flex-col justify-centre py-12 xl:py-0 ">
       <div className="container mx-auto mt-6">
         <motion.div 
           initial={{opacity:0}}
@@ -39,7 +39,7 @@ export const Services = () => {
           {services.map((service,index)=>{
             return (
             <div key={index} className="flex-1 flex flex-col justify-center gap-6 group">
-              <div className="w-full flex justify-between items-center">
+              <div className="w-full flex justify-between items-center ">
                 <div className="text-5xl font-semibold text-outline group-hover:text-accent transition-all duration-500">
                   {service.num}
                 </div>
@@ -49,7 +49,7 @@ export const Services = () => {
                   <BsArrowDownRight className="text-primary text-3xl" />
                 </Link>
               </div>
-              <h2 className="text-[42px] font-bold leading-none group-hover:text-accent transition all duration-500">{service.title}</h2>
+              <h2 className="text-[42px] font-bold leading-none group-hover:text-accent transition all duration-500 ">{service.title}</h2>
               <p className="text-white/50">{service.description}</p>
               <div className="border-b border-white/20 w-full"></div>
             </div>

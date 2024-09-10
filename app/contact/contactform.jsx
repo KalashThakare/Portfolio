@@ -6,6 +6,10 @@ import {Select,SelectContent,SelectGroup,SelectItem,SelectLabel,SelectTrigger,Se
 import {Button} from "@/components/ui/button";
 import {sendEmail} from "./sendEmail";
 import { useState } from "react";
+import {Toaster,toast} from "sonner"
+
+
+
 
 
 const initValues={
@@ -20,6 +24,9 @@ const initValues={
 const initState={ values:initValues};
 
 export const ContactForm = () => {
+
+    
+
     const [state,setState]=useState(initState);
 
     const{values}=state;
@@ -71,9 +78,14 @@ export const ContactForm = () => {
                         </Textarea>
                     </form>
                     <div className="flex flex-col gap-6 p-10 bg-[#27272c] ">
-                    <Button size="" className="max-w-28 rounded-xl text-lg" onClick={onSubmit}>
-                        Send
-                    </Button>
+                        <Toaster richColors position="top-centre"/>
+                        <Button size="" className="max-w-28 rounded-xl text-lg" onClick={() => {
+                            onSubmit();
+                            toast.success("Send Successfully");
+                            
+                        }}>
+                            Send
+                        </Button>
                     </div>
                     
                 </div>
