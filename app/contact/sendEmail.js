@@ -9,7 +9,7 @@ const CONTACT_MESSAGE_FIELDS = {
   message: "Message",
 };
 
-export const sendEmail=async(email,message,firstname)=>{
+export const sendEmail=async(email,message)=>{
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         host: "smtp",

@@ -47,7 +47,9 @@ export const ContactForm = () => {
         console.log("State: ",state)
         // nodemailer logic
 
-        await sendEmail(state.values.email, state.values.message, state.values.firstname);
+        await sendEmail(state.values.email, state.values.message);
+
+        setState(initState);
 
     };
 
