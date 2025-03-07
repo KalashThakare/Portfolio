@@ -14,8 +14,15 @@ export const Home = () => {
               Hello I'm <br /><span className="text-accent">Kalash Thakare</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-            A web developer and video editor with a creative edge.
-            I specialize in building dynamic websites and editing compelling videos that tell a story. My work is a fusion of technical expertise and artistic vision, aimed at delivering polished, user-friendly experiences. Dive into my portfolio to discover how I turn concepts into digital realities.
+            I build scalable, high-performance applications with a strong focus on backend architecture. From crafting APIs to optimizing databases, I love making things work seamlessly behind the scenes. Currently diving into AI/ML, exploring how intelligent systems can enhance real-world applications.
+            
+<br />
+<br />
+Beyond coding, I’ve collaborated with tech communities, sharing knowledge and growing with like-minded developers. Whether it's building products, solving complex problems, or discussing the latest in tech—I’m always up for it.
+
+<br />
+<br />
+Let’s connect and create something impactful! 
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">

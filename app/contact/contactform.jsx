@@ -47,7 +47,13 @@ export const ContactForm = () => {
         console.log("State: ",state)
         // nodemailer logic
 
-        await sendEmail(state.values.email, state.values.message);
+        try {
+            await sendEmail(state.values.email, state.values.message);
+        } catch (error) {
+            error.message="error";
+        }
+
+        
 
         setState(initState);
 
@@ -59,10 +65,10 @@ export const ContactForm = () => {
                         <h3 className="text-4xl text-accent">Lets work together</h3>
                         <p className="text-white/90 ">Fill out the form below to get started on your project. Lets create something amazing together!</p>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <Input type="firstname" name="firstname" placeholder="Firstname" value={values.firstname} onChange={handleChange}/>
-                            <Input type="lastname" name="lastname" placeholder="Lastname" value={values.lastname} onChange={handleChange}/>
-                            <Input type="email" name="email" placeholder="Email address" value={values.email} onChange={handleChange}/>
-                            <Input type="phone" name="number" placeholder="Phone number" value={values.number} onChange={handleChange}/>
+                            <Input required type="firstname" name="firstname" placeholder="Firstname" value={values.firstname} onChange={handleChange}/>
+                            <Input required type="lastname" name="lastname" placeholder="Lastname" value={values.lastname} onChange={handleChange}/>
+                            <Input required type="email" name="email" placeholder="Email address" value={values.email} onChange={handleChange}/>
+                            <Input required type="phone" name="number" placeholder="Phone number" value={values.number} onChange={handleChange}/>
                         </div>
                         <Select>
                             <SelectTrigger className="w-full">
