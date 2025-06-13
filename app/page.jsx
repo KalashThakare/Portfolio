@@ -14,7 +14,7 @@ export const Home = () => {
               Hello I'm <br /><span className="text-accent">Kalash Thakare</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-            I build scalable, high-performance applications with a strong focus on backend architecture. From crafting APIs to optimizing databases, I love making things work seamlessly behind the scenes. Currently diving into AI/ML, exploring how intelligent systems can enhance real-world applications.
+            I’m a builder at heart—focused on crafting scalable, high-performance systems that power the apps people rely on. From backend architecture to clean APIs and optimized databases, I love making complex systems run smoothly behind the scenes.
             
 <br />
 <br />
