@@ -17,7 +17,7 @@ const services=[
 
 export const Services = () => {
   return (
-    <section className="min-h-[80vh] flex flex-col justify-centre py-12 xl:py-0 ">
+    <section className="min-h-[80vh] flex flex-col justify-centre py-12 xl:py-0 p-2">
       <div className="container mx-auto mt-6">
         <motion.div 
           initial={{opacity:0}}

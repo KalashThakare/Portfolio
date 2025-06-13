@@ -105,7 +105,7 @@ export const Resume = () => {
     className="min-h-[80vh] flex py-12 xl:py-0 justify-center items-center"
     
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4">
         <Tabs defaultValue="Skills" className="flex flex-col xl:flex-row gap-[60px]">
           <TabsList className="flex flex-col w-full max-w-[360px] mx-auto xl:mx-0 gap-6">
             <TabsTrigger value="Education">
@@ -124,27 +124,27 @@ export const Resume = () => {
           <div className="min-h-[70vh] w-full">
             {/*education*/}
             <TabsContent value="Education" className="w-full">
-              <div className="flex flex-col gap-[30px] text-centre xl:text-left">
+              <div className="flex flex-col gap-[30px] text-centre xl:text-left px-4 xl:px-0">
                 <h3 className="text-4xl font-bold text-center xl:text-left">
                   {edu.title}
                 </h3>
-                <p className="max-w-[600px] text-white/80 mx-auto xl:mx-0">
+                <p className="max-w-[600px] text-white/80 mx-auto xl:mx-0 text-center xl:text-left">
                   {edu.Description}
                 </p>
                 <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 gap-[30px]">
+                  <ul className="grid grid-cols-1 gap-[30px] px-2">
                     {edu.items.map((item,index)=>{
                       return(
-                        <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col item-centre justify-centre lg:items-start gap-1">
-                          <span className="text-accent lg:text-left">
+                        <li key={index} className="bg-[#232329] min-h-[184px] py-6 px-6 xl:px-10 rounded-xl flex flex-col justify-center lg:items-start gap-2 text-center lg:text-left">
+                          <span className="text-accent text-sm xl:text-base">
                             {item.duration}
                           </span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px]  lg:text-left">
+                          <h3 className="text-lg xl:text-xl max-w-full lg:max-w-[260px] min-h-[40px] xl:min-h-[60px]">
                             {item.degree}
                           </h3>
-                          <div className="flex item-centre gap-3">
-                            <span className=" rounded-full bg-accent">.</span>
-                            <p className="text-white/60">
+                          <div className="flex items-center justify-center lg:justify-start gap-3">
+                            <span className="w-2 h-2 rounded-full bg-accent flex-shrink-0"></span>
+                            <p className="text-white/60 text-sm xl:text-base">
                               {item.institution}
                             </p>
                           </div>
@@ -195,19 +195,23 @@ export const Resume = () => {
             {/*About */}
 
             <TabsContent value="About me" className="w-full text-center xl:text-left">
-                <div className="flex flex-col gap-[30px]">
+                <div className="flex flex-col gap-[30px] px-4 xl:px-0">
                   <h3 className="text-4xl font-bold">
                     {about.title}
                   </h3>
                   <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0" >
                     {about.Description}
                   </p>
-                  <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 maz-w-[620px] mx-auto xl:mx-0 ">
+                  <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
                     {about.info.map((item,index)=>{
                       return(
-                        <li key={index} className="flex justify-center items-center xl:justify-start gap-4">
-                          <span className="text-white/60">{item.fieldname}</span>
-                          <span className="text-xl">{item.fieldValue}</span>
+                        <li key={index} className="flex flex-col sm:flex-row justify-center items-center xl:justify-start xl:items-center gap-2 sm:gap-4 p-3 bg-[#232329]/30 rounded-lg">
+                          <span className="text-white/60 text-sm sm:text-base font-medium min-w-fit">
+                            {item.fieldname}:
+                          </span>
+                          <span className="text-base sm:text-xl text-white break-words break-all text-center sm:text-left">
+                            {item.fieldValue}
+                          </span>
                         </li>
                       );
                     })}
